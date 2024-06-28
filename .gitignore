@@ -1,0 +1,30 @@
+# Ignore the .idea directory (IDE configuration files)
+.idea/
+
+# Ignore the bin directory (binary files)
+bin/
+
+# Ignore the lib directory (virtual environment libraries)
+lib/
+
+# Ignore the pyvenv.cfg file (virtual environment configuration)
+pyvenv.cfg
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore test files
+Testing.py
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment-specific files
+.env
+.vscode/
+*.log
+
+# Add any other files or directories you want to ignore below
