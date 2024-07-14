@@ -1,12 +1,12 @@
 import time
 
-import requests
 from pinecone import Pinecone
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import OllamaEmbeddings
-# from langchain_community.llms import Ollama
 from langchain.schema import Document
+from langchain_community.llms import Ollama
+from langchain.chains.question_answering import load_qa_chain
 
 ## Lets Read the document
 def read_doc(directory):
@@ -89,9 +89,6 @@ def retrieve_query(vector_array, k = 2):
     print(actual_result)
 
     return actual_result
-
-from langchain_community.llms import Ollama
-from langchain.chains.question_answering import load_qa_chain
 
 model = Ollama(model="llama2");
 chain = load_qa_chain(model, chain_type="stuff");
