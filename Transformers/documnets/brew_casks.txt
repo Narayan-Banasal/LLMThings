@@ -1,0 +1,12 @@
+clipy
+dbeaver-community
+fig
+github
+iterm2
+mysqlworkbench
+notion
+pgadmin4
+postman
+pycharm-ce
+visual-studio-code
+workbench
